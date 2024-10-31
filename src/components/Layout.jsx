@@ -16,7 +16,7 @@ const Layout = () => {
 						<Link to='/albums'>albums</Link>
 					</li>
 					<li>
-						<Link to='/start'>list</Link>
+						<Link to='/list'>list</Link>
 					</li>
 				</ul>
 			</nav>
