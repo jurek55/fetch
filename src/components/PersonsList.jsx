@@ -1,9 +1,8 @@
-// import PersonItem from "./PersonItem.jsx";
+import PersonItem from "./PersonItem.jsx";
 
 const PersonsList = ({ data }) => {
-	console.log(data, "props");
 
-	// const items = data.map(item => <PersonItem key={item.id} person={item} />);
+	const items = data.map(item => <PersonItem key={item.id} person={item} />);
 
 	return (
 		<>
@@ -11,7 +10,7 @@ const PersonsList = ({ data }) => {
 				<h1>Osoby</h1>
 			</div>
 			<div>drzewo</div>
-			{/* {items} */}
+			{items}
 		</>
 	);
 };

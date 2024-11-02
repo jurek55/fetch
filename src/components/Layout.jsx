@@ -18,7 +18,7 @@ const Layout = () => {
 					<li>
 						<Link to='/list'>List</Link>
 					</li>
-						<Link to='/kunicki'>Kunicki</Link>
+					<Link to='/kunicki'>Kunicki</Link>
 					<li>
 						<Link to='/kocur'>Kocur</Link>
 					</li>
@@ -30,6 +30,9 @@ const Layout = () => {
 					</li>
 					<li>
 						<Link to='/felicki'>Felicki</Link>
+					</li>
+					<li>
+						<Link to='/dane'>Dane</Link>
 					</li>
 				</ul>
 			</nav>
