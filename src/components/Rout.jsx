@@ -10,6 +10,7 @@ import Kocur from "./Kocur.jsx";
 import Hermann from "./Hermann.jsx";
 import Frackowiak from './Frackowiak.jsx'
 import Felicki from './Felicki.jsx'
+import NoPage from './NoPage.jsx'
 
 const Rout = () => {
 	return (
@@ -24,6 +25,7 @@ const Rout = () => {
 			<Route path='/hermann' element={<Hermann />} />
 			<Route path='/frackowiak' element={<Frackowiak />} />
 			<Route path='/felicki' element={<Felicki />} />
+			<Route path= '*' element={<NoPage />} />
 		</Routes>
 	);
 };
