@@ -1,6 +1,11 @@
-const Kocur =()=>{
-    return <div>
-        <h1>Kocur</h1>
-    </div>
-}
-export default Kocur
+const Kocur = () => {
+	return (
+		<>
+			<div>
+				<h1>Kocur</h1>
+			</div>
+			<div>Kocur family</div>
+		</>
+	);
+};
+export default Kocur;

@@ -1,6 +1,11 @@
-const Frackowiak =()=>{
-    return <div>
-        <h1>Frąckowiak</h1>
-    </div>
-}
-export default Frackowiak
+const Frackowiak = () => {
+	return (
+		<>
+			<div>
+				<h1>Frąckowiak</h1>
+			</div>
+			<div>Frąckowiak family</div>
+		</>
+	);
+};
+export default Frackowiak;

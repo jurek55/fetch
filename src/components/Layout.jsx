@@ -18,6 +18,19 @@ const Layout = () => {
 					<li>
 						<Link to='/list'>List</Link>
 					</li>
+						<Link to='/kunicki'>Kunicki</Link>
+					<li>
+						<Link to='/kocur'>Kocur</Link>
+					</li>
+					<li>
+						<Link to='/frackowiak'>Frąckowiak</Link>
+					</li>
+					<li>
+						<Link to='/hermann'>Hermann</Link>
+					</li>
+					<li>
+						<Link to='/felicki'>Felicki</Link>
+					</li>
 				</ul>
 			</nav>
 
