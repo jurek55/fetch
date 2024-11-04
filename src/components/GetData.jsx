@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import PersonsList from "./PersonsList.jsx";
+// import PersonsList from "./PersonsList.jsx";
 
-const GetData = () => {
+const GetData = () =>{
 	const [data, setData] = useState([]);
 	const myurl = "https://api.jkunicki.pl/dane.php";
 	
@@ -18,7 +18,7 @@ const GetData = () => {
 		});
 	}, []);
 	if (data.length) {
-		return <PersonsList data={data} />;
+		return null
 	} else {
 		return <div>waiting for data ...</div>;
 	}

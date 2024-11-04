@@ -11,14 +11,14 @@ import Frackowiak from './Frackowiak.jsx'
 import Felicki from './Felicki.jsx'
 import NoPage from './NoPage.jsx'
 
-const Rout = () => {
+const Rout = ({data}) => {
 	return (
 		<Routes>
 			<Route index element={<Welcome />} />
 			<Route path='/blogs' element={<Blogs />} />
 			<Route path='/albums' element={<Albums />} />
 			<Route path='/home' element={<Home />} />
-			<Route path ='/kunicki' element={<Kunicki />} />
+			<Route path ='/kunicki' element={<Kunicki data = {data}/>} />
 			<Route path='/kocur' element={<Kocur />} />
 			<Route path='/hermann' element={<Hermann />} />
 			<Route path='/frackowiak' element={<Frackowiak />} />

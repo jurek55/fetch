@@ -4,11 +4,14 @@ const PersonItem = ({ person }) => {
 	return (
 		<>
 			<div className='person-item'>
-				<p>{person.id}.</p>
-				<p className = 'name'>{person.imie.toUpperCase()}</p>
+				{/* <div>{person.id}.</div>
+				<div>{person.generation}</div> */}
+				<img src = {person.foto}/>
+				y<p className = 'name'>{person.imie.toUpperCase()}</p>
 				<p className = 'name'>{person.nazwisko.toUpperCase()}</p>
+				{person.z_domu ? <p className = 'name'>z domu {person.z_domu.toUpperCase()}</p>: null}
+
 			</div>
-			<hr></hr>
 		</>
 	);
 };
