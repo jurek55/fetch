@@ -19,10 +19,10 @@ const Rout = ({data}) => {
 			<Route path='/albums' element={<Albums />} />
 			<Route path='/home' element={<Home />} />
 			<Route path ='/kunicki' element={<Kunicki data = {data}/>} />
-			<Route path='/kocur' element={<Kocur />} />
-			<Route path='/hermann' element={<Hermann />} />
-			<Route path='/frackowiak' element={<Frackowiak />} />
-			<Route path='/felicki' element={<Felicki />} />
+			<Route path='/kocur' element={<Kocur data = {data}/>} />
+			<Route path='/hermann' element={<Hermann data = {data}/>} />
+			<Route path='/frackowiak' element={<Frackowiak data = {data}/>} />
+			<Route path='/felicki' element={<Felicki data = {data}/>} />
 			<Route path='/dane' element={<GetData />} />
 
 			<Route path= '*' element={<NoPage />} />

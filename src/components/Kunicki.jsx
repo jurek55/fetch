@@ -4,26 +4,26 @@ import PersonItem from "./PersonItem";
 const Kunicki = ({ data }) => {
 	const family_id_f = 'kunicka'
 	const family_id_m = 'kunicki'
-	const kuniccy = data.filter(item => {
+	const tab = data.filter(item => {
 		return (
 			item.nazwisko == "kunicki" ||
 			item.nazwisko == "kunicka" ||
 			item.z_domu == "kunicka"
 		);
 	});
-	const generation1 = kuniccy.filter(item => {
+	const generation1 = tab.filter(item => {
 		return item.generation == 1;
 	});
-	const generation2 = kuniccy.filter(item => {
+	const generation2 = tab.filter(item => {
 		return item.generation == 2;
 	});
-	const generation3 = kuniccy.filter(item => {
+	const generation3 = tab.filter(item => {
 		return item.generation == 3;
 	});
-	const generation4 = kuniccy.filter(item => {
+	const generation4 = tab.filter(item => {
 		return item.generation == 4;
 	});
-	const generation5 = kuniccy.filter(item => {
+	const generation5 = tab.filter(item => {
 		return item.generation == 5;
 	});
 
@@ -42,8 +42,7 @@ const Kunicki = ({ data }) => {
 	const generation5items = generation5.map(item => (
 		<PersonItem key={item.id} person={item} family_id_f = {family_id_f} family_id_m = {family_id_m}/>
 	));
-	console.log(data);
-	console.log(generation4);
+	
 	return (
 		<div className='kunicki-container'>
 			<div className='kunicki-generation1-items generation'>{generation1items}</div>
