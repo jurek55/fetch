@@ -1,0 +1,6 @@
+div.persons-list {
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    border: 1px solid green;
+}

@@ -9,6 +9,8 @@ import Kocur from "./Kocur.jsx";
 import Hermann from "./Hermann.jsx";
 import Frackowiak from './Frackowiak.jsx'
 import Felicki from './Felicki.jsx'
+import PersonsList from './PersonsList'
+
 import NoPage from './NoPage.jsx'
 
 const Rout = ({data}) => {
@@ -23,6 +25,7 @@ const Rout = ({data}) => {
 			<Route path='/hermann' element={<Hermann data = {data}/>} />
 			<Route path='/frackowiak' element={<Frackowiak data = {data}/>} />
 			<Route path='/felicki' element={<Felicki data = {data}/>} />
+			<Route path='/list' element={<PersonsList data = {data}/>} />
 			<Route path='/dane' element={<GetData />} />
 
 			<Route path= '*' element={<NoPage />} />
