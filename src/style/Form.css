@@ -1,0 +1,9 @@
+
+div.container {
+    margin: auto ;
+    width: 900px;
+    height: 500px;
+    justify-content: center;
+    border: 1px solid black;
+    text-align: center;
+}

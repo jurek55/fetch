@@ -32,7 +32,16 @@ const Layout = () => {
 						<Link to='/felicki'>Felicki</Link>
 					</li>
 					<li>
+					<Link to='/stroka'>Stroka</Link>
+					</li>
+					<li>
+					<Link to='/spaloniak'>Spaloniak</Link>
+					</li>
+					<li>
 						<Link to='/dane'>Dane</Link>
+					</li>
+					<li>
+						<Link to='/admin'>Admin panel</Link>
 					</li>
 				</ul>
 			</nav>

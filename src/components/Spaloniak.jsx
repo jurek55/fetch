@@ -1,14 +1,14 @@
 import "../style/Kunicki.css";
 import PersonItem from "./PersonItem";
 
-const Felicki = ({ data }) => {
-	const family_id_f = 'felicka'
-	const family_id_m = 'felicki'
+const Spaloniak = ({ data }) => {
+	const family_id_f = 'spaloniak'
+	const family_id_m = 'spaloniak'
 	const tab = data.filter(item => {
 		return (
-			item.nazwisko == "felicki" ||
-			item.nazwisko == "felicka" ||
-			item.z_domu == "felicka"
+			item.nazwisko == "spaloniak" ||
+			item.nazwisko == "spaloniak" ||
+			item.z_domu == "spaloniak"
 		);
 	});
 	const generation1 = tab.filter(item => {
@@ -53,4 +53,4 @@ const Felicki = ({ data }) => {
 		</div>
 	);
 };
-export default Felicki;
+export default Spaloniak;
