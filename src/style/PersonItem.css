@@ -1,8 +1,6 @@
 div.person-item-wraper {
 	display: flex;
 	flex-direction: column;
-	/* line-height: 0px; */
-	font-size: 12px;
 	margin: 5px;
 	border: 1px solid lightblue;
 	border-radius: 20px;
@@ -10,11 +8,11 @@ div.person-item-wraper {
 
 p {
 	margin: 10px;
-	width: 200px;
-	font-size: 12px;
+	width: 190px;
+	font-size: 11px;
 	line-height: 1px;
 }
-p>a>img {
+p > a > img {
 	height: 50px;
 	width: 50px;
 	border-radius: 50%;

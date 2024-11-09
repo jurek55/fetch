@@ -18,7 +18,10 @@ const Layout = () => {
 					<li>
 						<Link to='/list'>List</Link>
 					</li>
-					<Link to='/kunicki'>Kunicki</Link>
+					<li>
+						<Link to='/kunicki'>Kunicki</Link>
+					</li>
+
 					<li>
 						<Link to='/kocur'>Kocur</Link>
 					</li>
@@ -32,13 +35,10 @@ const Layout = () => {
 						<Link to='/felicki'>Felicki</Link>
 					</li>
 					<li>
-					<Link to='/stroka'>Stroka</Link>
+						<Link to='/stroka'>Stroka</Link>
 					</li>
 					<li>
-					<Link to='/spaloniak'>Spaloniak</Link>
-					</li>
-					<li>
-						<Link to='/dane'>Dane</Link>
+						<Link to='/spaloniak'>Spaloniak</Link>
 					</li>
 					<li>
 						<Link to='/admin'>Admin panel</Link>

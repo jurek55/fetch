@@ -1,4 +1,3 @@
-
 div .kunicki-container {
 	display: flex;
 	flex-direction: column;
@@ -6,31 +5,33 @@ div .kunicki-container {
 	margin: 90px;
 	align-content: flex-start;
 }
-	
+
 .kunicki-generation1-items {
 	display: flex;
-	height: 110px;
-	width: 500px;
+	height: fit-content;
+	/* width: 500px; */
 	justify-content: center;
 }
+
 .kunicki-generation2-items {
 	display: flex;
-	height: 110px;
+	height: fit-content;
 }
 .kunicki-generation3-items {
 	display: flex;
-	height: 110px;
+	/* height: 110px; */
 }
 .kunicki-generation4-items {
 	display: flex;
-	height: 110px;
+	width: 1400px;
+	justify-content: flex-end;
 }
 .kunicki-generation5-items {
 	display: flex;
-	height: 110px;
+	/* height: 110px; */
 	justify-content: flex-end;
-	width: 640px;
+	width: 600px;
 }
-.generation {
+/* .generation {
 	height: 150px;
-}
+} */

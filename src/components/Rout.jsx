@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import GetData from "./GetData.jsx";
+// import GetData from "./GetData.jsx";
 import Albums from "./Albums.jsx";
 import Home from "./Home.jsx";
 import Blogs from "./Blogs.jsx";
@@ -32,7 +32,6 @@ const Rout = ({data}) => {
 			<Route path='/spaloniak' element={<Spaloniak data = {data}/>} />
 			<Route path='/list' element={<PersonsList data = {data}/>} />
 			<Route path='/admin' element={<Administration data = {data}/>} />
-			<Route path='/dane' element={<GetData />} />
 
 			<Route path= '*' element={<NoPage />} />
 		</Routes>
