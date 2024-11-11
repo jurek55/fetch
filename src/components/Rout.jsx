@@ -7,6 +7,7 @@ import Welcome from './Welcome.jsx'
 import Kunicki from "./Kunicki.jsx";
 import Kocur from "./Kocur.jsx";
 import Knapik from "./Knapik.jsx";
+import Malik from "./Malik.jsx";
 import Hermann from "./Hermann.jsx";
 import Frackowiak from './Frackowiak.jsx'
 import Felicki from './Felicki.jsx'
@@ -27,6 +28,7 @@ const Rout = ({data}) => {
 			<Route path ='/kunicki' element={<Kunicki data = {data}/>} />
 			<Route path='/kocur' element={<Kocur data = {data}/>} />
 			<Route path='/knapik' element={<Knapik data = {data}/>} />
+			<Route path='/malik' element={<Malik data = {data}/>} />
 			<Route path='/hermann' element={<Hermann data = {data}/>} />
 			<Route path='/frackowiak' element={<Frackowiak data = {data}/>} />
 			<Route path='/felicki' element={<Felicki data = {data}/>} />

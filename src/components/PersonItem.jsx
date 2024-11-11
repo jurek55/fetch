@@ -1,10 +1,10 @@
 import "../style/PersonItem.css";
 import { Link } from "react-router-dom";
 
-const PersonItem = ({ person, family_id_f, family_id_m }) => {
+const PersonItem = ({ person, family_id_f, family_id_m, space }) => {
 	return (
 		<>
-			<div className = {`${person.imie}-${person.nazwisko}-left`}></div>
+			{space != 'no_space' ?<div className = {`${person.imie}-${person.nazwisko}-left`}></div> : null}
 			<div className='person-item-wraper'>
 				<p className='name'>
 					<Link to=''>
@@ -31,7 +31,7 @@ const PersonItem = ({ person, family_id_f, family_id_m }) => {
 				{person.ur ? <p>ur. {person.ur}</p> : null}
 				{person.zm ? <p>zm. {person.zm}</p> : null}
 			</div>
-			<div className = {`${person.imie}-${person.nazwisko}-right`}></div>
+			{space != 'no_space' ?<div className = {`${person.imie}-${person.nazwisko}-right`}></div> : null}
 		</>
 	);
 };

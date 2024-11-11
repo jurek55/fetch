@@ -2,7 +2,9 @@ import PersonItem from "./PersonItem.jsx";
 import '../style/PersonsList.css'
 
 const PersonsList = ({ data }) => {
-	const items = data.map(item => <PersonItem key={item.id} person={item} />);
+
+	const space = 'no_space'
+	const items = data.map(item => <PersonItem key={item.id} person={item} space={space}/>);
 
 	return (
 		<>

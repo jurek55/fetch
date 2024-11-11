@@ -6,7 +6,7 @@ import "./App.css";
 
 function App() {
 	const [data, setData] = useState([]);
-	const myurl = "https://api.jkunicki.pl/dane.php";
+	const myurl = "http://localhost/home/dane.php";
 
 	const request = async url => {
 		const response = await fetch(url);

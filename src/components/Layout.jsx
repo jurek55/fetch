@@ -29,6 +29,9 @@ const Layout = () => {
 						<Link to='/knapik'>Knapik</Link>
 					</li>
 					<li>
+						<Link to='/malik'>Malik</Link>
+					</li>
+					<li>
 						<Link to='/frackowiak'>Frąckowiak</Link>
 					</li>
 					<li>
