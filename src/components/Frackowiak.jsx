@@ -1,4 +1,4 @@
-import "../style/Kunicki.css";
+import "../style/Frackowiak.css";
 import PersonItem from "./PersonItem";
 
 const Frackowiak = ({ data }) => {
@@ -65,22 +65,12 @@ const Frackowiak = ({ data }) => {
 	));
 
 	return (
-		<div className='kunicki-container'>
-			<div className='kunicki-generation1-items generation'>
-				{generation1items}
-			</div>
-			<div className='kunicki-generation2-items generation'>
-				{generation2items}
-			</div>
-			<div className='kunicki-generation3-items generation'>
-				{generation3items}
-			</div>
-			<div className='kunicki-generation4-items generation'>
-				{generation4items}
-			</div>
-			<div className='kunicki-generation5-items generation'>
-				{generation5items}
-			</div>
+		<div className='frackowiak-container'>
+			<div className='frackowiak1 generation'>{generation1items}</div>
+			<div className='frackowiak2 generation'>{generation2items}</div>
+			<div className='frackowiak3 generation'>{generation3items}</div>
+			<div className='frackowiak4 generation'>{generation4items}</div>
+			<div className='frackowiak5 generation'>{generation5items}</div>
 		</div>
 	);
 };

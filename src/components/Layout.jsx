@@ -26,6 +26,9 @@ const Layout = () => {
 						<Link to='/kocur'>Kocur</Link>
 					</li>
 					<li>
+						<Link to='/knapik'>Knapik</Link>
+					</li>
+					<li>
 						<Link to='/frackowiak'>Frąckowiak</Link>
 					</li>
 					<li>
@@ -40,6 +43,7 @@ const Layout = () => {
 					<li>
 						<Link to='/spaloniak'>Spaloniak</Link>
 					</li>
+					
 					<li>
 						<Link to='/admin'>Admin panel</Link>
 					</li>

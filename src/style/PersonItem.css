@@ -21,3 +21,29 @@ p.name {
 	text-transform: uppercase;
 	font-weight: 600;
 }
+div.michał-kunicki-right,
+div.jerzy-kunicki-right {
+	width: 50px;
+}
+div.renata-kunicka-left {
+	width: 40px;
+}
+div.witold-kunicki-left {
+	width: 270px;
+}
+div.władysław-kunicki-left{
+	width: 50px;
+}
+div.martyn-frąckowiak-left {
+	width:900px;
+}
+div.filip-felicki-right {
+	width: 50px;
+}
+div.janina-felicka-left {
+	width: 100px;
+}
+div.franciszek-felicki-left {
+	width: 200px;
+}
+

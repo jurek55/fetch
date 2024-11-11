@@ -1,14 +1,14 @@
-import "../style/Kunicki.css";
+import "../style/knapik.css";
 import PersonItem from "./PersonItem";
 
-const Kunicki = ({ data }) => {
-	const family_id_f = "kunicka";
-	const family_id_m = "kunicki";
+const Knapik = ({ data }) => {
+	const family_id_f = "knapik";
+	const family_id_m = "knapik";
 	const tab = data.filter(item => {
 		return (
-			item.nazwisko == "kunicki" ||
-			item.nazwisko == "kunicka" ||
-			item.z_domu == "kunicka"
+			item.nazwisko == "knapik" ||
+			item.nazwisko == "knapik" ||
+			item.z_domu == "knapik"
 		);
 	});
 	const generation1 = tab.filter(item => {
@@ -69,13 +69,13 @@ const Kunicki = ({ data }) => {
 	));
 
 	return (
-		<div className='kunicki-container'>
-			<div className='kunicki1 generation'>{generation1items}</div>
-			<div className='kunicki2 generation'>{generation2items}</div>
-			<div className='kunicki3 generation'>{generation3items}</div>
-			<div className='kunicki4 generation'>{generation4items}</div>
-			<div className='kunicki5 generation'>{generation5items}</div>
+		<div className='knapik-container'>
+			<div className='knapik1 generation'>{generation1items}</div>
+			<div className='knapik2 generation'>{generation2items}</div>
+			<div className='knapik3 generation'>{generation3items}</div>
+			<div className='knapik4 generation'>{generation4items}</div>
+			<div className='knapik5 generation'>{generation5items}</div>
 		</div>
 	);
 };
-export default Kunicki;
+export default Knapik;

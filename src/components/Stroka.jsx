@@ -1,9 +1,9 @@
-import "../style/Kunicki.css";
+import "../style/Stroka.css";
 import PersonItem from "./PersonItem";
 
 const Stroka = ({ data }) => {
-	const family_id_f = 'stroka'
-	const family_id_m = 'stroka'
+	const family_id_f = "stroka";
+	const family_id_m = "stroka";
 	const tab = data.filter(item => {
 		return (
 			item.nazwisko == "stroka" ||
@@ -28,28 +28,53 @@ const Stroka = ({ data }) => {
 	});
 
 	const generation1items = generation1.map(item => (
-		<PersonItem key={item.id} person={item} family_id_f = {family_id_f} family_id_m = {family_id_m}/>
+		<PersonItem
+			key={item.id}
+			person={item}
+			family_id_f={family_id_f}
+			family_id_m={family_id_m}
+		/>
 	));
 	const generation2items = generation2.map(item => (
-		<PersonItem key={item.id} person={item} family_id_f = {family_id_f} family_id_m = {family_id_m}/>
+		<PersonItem
+			key={item.id}
+			person={item}
+			family_id_f={family_id_f}
+			family_id_m={family_id_m}
+		/>
 	));
 	const generation3items = generation3.map(item => (
-		<PersonItem key={item.id} person={item} family_id_f = {family_id_f} family_id_m = {family_id_m}/>
+		<PersonItem
+			key={item.id}
+			person={item}
+			family_id_f={family_id_f}
+			family_id_m={family_id_m}
+		/>
 	));
 	const generation4items = generation4.map(item => (
-		<PersonItem key={item.id} person={item} family_id_f = {family_id_f} family_id_m = {family_id_m}/>
+		<PersonItem
+			key={item.id}
+			person={item}
+			family_id_f={family_id_f}
+			family_id_m={family_id_m}
+		/>
 	));
 	const generation5items = generation5.map(item => (
-		<PersonItem key={item.id} person={item} family_id_f = {family_id_f} family_id_m = {family_id_m}/>
+		<PersonItem
+			key={item.id}
+			person={item}
+			family_id_f={family_id_f}
+			family_id_m={family_id_m}
+		/>
 	));
-	
+
 	return (
-		<div className='kunicki-container'>
-			<div className='kunicki-generation1-items generation'>{generation1items}</div>
-			<div className='kunicki-generation2-items generation'>{generation2items}</div>
-			<div className='kunicki-generation3-items generation'>{generation3items}</div>
-			<div className='kunicki-generation4-items generation'>{generation4items}</div>
-			<div className='kunicki-generation5-items generation'>{generation5items}</div>
+		<div className='stroka-container'>
+			<div className='stroka1 generation'>{generation1items}</div>
+			<div className='stroka2 generation'>{generation2items}</div>
+			<div className='stroka3 generation'>{generation3items}</div>
+			<div className='stroka4 generation'>{generation4items}</div>
+			<div className='stroka5 generation'>{generation5items}</div>
 		</div>
 	);
 };
