@@ -8,3 +8,9 @@ ul>li {
     line-height: 15px;
     padding: 3px;
 }
+.active {
+    color: red;
+}
+a:hover {
+    color: red;
+}

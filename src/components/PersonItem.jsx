@@ -7,7 +7,7 @@ const PersonItem = ({ person, family_id_f, family_id_m, space }) => {
 			{space != 'no_space' ?<div className = {`${person.imie}-${person.nazwisko}-left`}></div> : null}
 			<div className='person-item-wraper'>
 				<p className='name'>
-					<Link to=''>
+					<Link to='/franciszekkunicki'>
 						<img src={person.foto} />
 					</Link>{" "}
 					{person.imie}{" "}

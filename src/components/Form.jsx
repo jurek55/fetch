@@ -17,7 +17,7 @@ const Form = () => {
 		const json = JSON.stringify(newPerson);
 		console.log(json, typeof json);
 		(async () => {
-			const rawResponse = await fetch("https://api.jkunicki.pl/dane_r.php", {
+			const rawResponse = await fetch("http://localhost/home/dane_r.php", {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",

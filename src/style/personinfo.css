@@ -1,0 +1,7 @@
+div.info {
+    display: flex;
+    justify-content: central;
+    text-align: justify;
+    flex-basis: 50%;
+    margin: 100px;
+}

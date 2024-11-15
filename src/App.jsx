@@ -6,7 +6,9 @@ import "./App.css";
 
 function App() {
 	const [data, setData] = useState([]);
-	const myurl = "http://localhost/home/dane.php";
+	const [images, setImages] = useState([]);
+	const myurl_data = "http://localhost/home/dane.php";
+	const myurl_images = "http://localhost/home/images.php";
 
 	const request = async url => {
 		const response = await fetch(url);
@@ -16,13 +18,19 @@ function App() {
 	};
 
 	useEffect(() => {
-		request(myurl).then(resp => {
+		request(myurl_data).then(resp => {
 			setData(resp);
+		});
+	}, []);
+	useEffect(() => {
+		request(myurl_images).then(resp => {
+			setImages(resp);
 		});
 	}, []);
 
 	console.log(data);
-	if (data.length) {
+	console.log(images);
+	if (data.length && images.length) {
 		return (
 			<BrowserRouter>
 				<div className='container'>
@@ -30,7 +38,7 @@ function App() {
 						<Layout />
 					</div>
 					<div className='content'>
-						<Rout data={data} />
+						<Rout data={data} images={images} />
 					</div>
 				</div>
 			</BrowserRouter>
