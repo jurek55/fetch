@@ -1,17 +1,18 @@
 import { Link } from "react-router-dom";
-// import SinglePhoto from './SinglePhoto'
 
-const Item = ({ item, link }) => {
+const Item = ({ item }) => {
 	return (
 		<>
-			<Link to={`${link}`}>
-				<img src={`${item.path}${item.foto_name}`} alt='brak zdjęcia' style={{ width: "240px", marginTop: '20px' }} />
-				<figcaption style={{ fontSize: "14px", width: "220px" }}>
-					{item.caption}
-				</figcaption>
-			
+			<Link to='/single'>
+				<img
+					src={`${item.path}${item.foto_name}`}
+					alt='brak zdjęcia'
+					style={{ width: "210px", marginTop: "20px" }}
+				/>
 			</Link>
-			{/* <SinglePhoto /> */}
+			<figcaption style={{ fontSize: "14px", width: "200px" }}>
+				{item.caption}
+			</figcaption>
 		</>
 	);
 };

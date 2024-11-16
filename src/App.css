@@ -20,6 +20,7 @@ body {
 div.nav {
 	text-justify: left;
 	width: 11%;
+	min-width: 220px;
 	margin-right: 1px solid black;
 	background-color: yellow;
 	border: 1px solid black;

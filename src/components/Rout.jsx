@@ -19,7 +19,7 @@ import AlbumMarszewo from './AlbumMarszewo'
 import AlbumPromnice from './AlbumPromnice'
 import AlbumPowiazyn from './AlbumPowiazyn'
 import Administration from './Administration'
-// import SinglePhoto from './SinglePhoto.jsx'
+import SinglePhoto from './SinglePhoto.jsx'
 import NoPage from './NoPage.jsx'
 
 const Rout = ({data, images}) => {
@@ -30,7 +30,7 @@ const Rout = ({data, images}) => {
 			<Route path='/marszewo' element={<AlbumMarszewo images = {images}/>} />
 			<Route path='/promnice' element={<AlbumPromnice images = {images}/>} />
 			<Route path='/powiazyn' element={<AlbumPowiazyn images = {images}/>} />
-			{/* <Route path='/marszewo' element={<SinglePhoto images = {images}/>} /> */}
+			<Route path='/single' element={<SinglePhoto images = {images}/>} />
 			<Route path='/home' element={<Home />} />
 			<Route path ='/kunicki' element={<Kunicki data = {data}/>} />
 			<Route path ='/franciszekkunicki' element={<FranciszekKunicki />} />
