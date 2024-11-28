@@ -5,7 +5,7 @@ const Item = ({ item }) => {
 		<>
 			<Link to='/single'>
 				<img
-					src={`${item.path}${item.foto_name}`}
+					src={`${item.path_to}${item.foto_name}`}
 					alt='brak zdjęcia'
 					style={{ width: "210px", marginTop: "20px" }}
 				/>
