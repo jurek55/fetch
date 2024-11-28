@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-import { Outlet } from "react-router";
 import Home from "./Home.jsx";
 import Blogs from "./Blogs.jsx";
 import Welcome from "./Welcome.jsx";
@@ -28,22 +27,24 @@ const Rout = ({ data, images }) => {
 			<Route path='/home' element={<Home />} />
 			<Route path='/blogs' element={<Blogs />} />
 			<Route path='/welcome' element={<Welcome />} />
-			<Route path='/kunicki' element={<Kunicki data={data} images={images} />}/>
-			<Route path='/kocur' element={<Kocur />} />
-			<Route path='/knapik' element={<Knapik />} />
-			<Route path='/malik' element={<Malik />} />
-			<Route path='/hermann' element={<Hermann />} />
-			<Route path='/frackowiak' element={<Frackowiak />} />
-			<Route path='/felicki' element={<Felicki />} />
-			<Route path='/stroka' element={<Stroka />} />
-			<Route path='/spaloniak' element={<Spaloniak />} />
+			<Route
+				path='/kunicki'
+				element={<Kunicki data={data} />}
+			/>
+			<Route path='/kocur' element={<Kocur data={data}/>} />
+			<Route path='/knapik' element={<Knapik data={data}/>} />
+			<Route path='/malik' element={<Malik data={data}/>} />
+			<Route path='/hermann' element={<Hermann data={data}/>} />
+			<Route path='/frackowiak' element={<Frackowiak data={data}/>} />
+			<Route path='/felicki' element={<Felicki data={data}/>} />
+			<Route path='/stroka' element={<Stroka data={data}/>} />
+			<Route path='/spaloniak' element={<Spaloniak data={data}/>} />
 			<Route path='/list' element={<PersonsList />} />
-			<Route path='/marszewo' element={<AlbumMarszewo />} />
-			<Route path='/promnice' element={<AlbumPromnice />} />
-			<Route path='/powiazyn' element={<AlbumPowiazyn />} />
+			<Route path='/marszewo' element={<AlbumMarszewo images = {images}/>} />
+			<Route path='/promnice' element={<AlbumPromnice images = {images}/>} />
+			<Route path='/powiazyn' element={<AlbumPowiazyn images = {images}/>} />
 			<Route path='panel' element={<Administration />} />
 			<Route path='*' element={<NoPage />} />
-			<Outlet />
 		</Routes>
 	);
 };
