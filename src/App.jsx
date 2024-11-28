@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
-import Layout from "./components/Layout.jsx";
-import Rout from "./components/Rout.jsx";
+import Layout from "./components/Layout";
 import "./App.css";
+import Rout from "./components/Rout";
 
 function App() {
 	const [data, setData] = useState([]);

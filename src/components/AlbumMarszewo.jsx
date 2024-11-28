@@ -10,7 +10,7 @@ const AlbumMarszewo = ({ images }) => {
 		<Item item={item} key={item.id}  />
 	));
 	return (
-		<Masonry columns={{ 640: 1, 768: 2, 1024: 3, 1280: 5 }} gap={15}>
+		<Masonry columns={{ 640: 1, 768: 2, 1024: 3, 1280: 6 }} gap={15}>
 			{photos}
 		</Masonry>
 	);

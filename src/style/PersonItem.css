@@ -23,27 +23,43 @@ p.name {
 }
 div.michał-kunicki-right,
 div.jerzy-kunicki-right {
+	display: flex;
+	flex-wrap: wrap;
 	width: 50px;
 }
 div.renata-kunicka-left {
 	width: 40px;
+	display: flex;
+
 }
 div.witold-kunicki-left {
 	width: 270px;
+	display: flex;
+
 }
 div.władysław-kunicki-left{
 	width: 50px;
+	display: flex;
+
 }
 div.martyn-frąckowiak-left {
 	width:900px;
+	display: flex;
+
 }
 div.filip-felicki-right {
 	width: 50px;
+	display: flex;
+
 }
 div.janina-felicka-left {
 	width: 100px;
+	display: flex;
+
 }
 div.franciszek-felicki-left {
 	width: 200px;
+	display: flex;
+
 }
 

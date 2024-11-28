@@ -1,9 +1,10 @@
-import { Outlet, NavLink } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
+import {Outlet} from 'react-router';
 import "../style/Layout.css";
 
 const Layout = () => {
 	const links = [
-		{ id: 1, path: "/home", name: "Home" },
+		{ id: 1, path: "/", name: "Home" },
 		{ id: 2, path: "/blogs", name: "Blogs" },
 		{ id: 3, path: "/albums", name: "Albums" },
 		{ id: 4, path: "/list", name: "List" },
@@ -21,23 +22,18 @@ const Layout = () => {
 		{ id: 16, path: "/powiazyn", name: "Album Powiazyn" },
 		{ id: 17, path: "/promnice", name: "Album Promnice" },
 		{ id: 18, path: "/admin", name: "Admin panel" },
-
 	];
 
 	const items = links.map(item => {
 		return (
-			<li key={item.id}>
+			<div className='nav-menu ' key={item.id}>
 				<NavLink to={item.path}>{item.name}</NavLink>
-			</li>
+				<Outlet />
+			</div>
 		);
 	});
 
-	return (
-		<ul>
-			{items}
-			<Outlet />
-		</ul>
-	);
+	return <>{items}</>;
 };
 
 export default Layout;
