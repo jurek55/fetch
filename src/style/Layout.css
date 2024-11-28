@@ -1,16 +1,20 @@
-ul {
+/* ul {
     list-style-type: none;
     text-align: left;
     font-size: 20px;
-}
-ul>li {
-    height: 40px;
-    line-height: 15px;
-    padding: 3px;
-}
+} */
+ div.nav-menu {
+	display: flex;
+	justify-content:flex-end;
+	align-items: center;
+	height: 40px;
+	line-height: 15px;
+
+	padding: 13px;
+} 
 .active {
-    color: red;
+	color: red;
 }
 a:hover {
-    color: red;
+	color: red;
 }
