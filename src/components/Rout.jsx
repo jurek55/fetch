@@ -28,10 +28,7 @@ const Rout = ({ data, images }) => {
 			<Route path='/home' element={<Home />} />
 			<Route path='/blogs' element={<Blogs />} />
 			<Route path='/welcome' element={<Welcome />} />
-			<Route
-				path='/kunicki'
-				element={<Kunicki data={data} images={images} />}
-			/>
+			<Route path='/kunicki' element={<Kunicki data={data} images={images} />}/>
 			<Route path='/kocur' element={<Kocur />} />
 			<Route path='/knapik' element={<Knapik />} />
 			<Route path='/malik' element={<Malik />} />
