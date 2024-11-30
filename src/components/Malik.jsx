@@ -44,7 +44,7 @@ const Malik = ({ data }) => {
 	));
 	
 	return (
-		<div className='malik-container'>
+		<div className='name-container'>
 			<div className='malik1 generation'>{generation1items}</div>
 			<div className='malik2 generation'>{generation2items}</div>
 			<div className='malik3 generation'>{generation3items}</div>

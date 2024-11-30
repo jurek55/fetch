@@ -69,7 +69,7 @@ const Kunicki = ({ data }) => {
 	));
 
 	return (
-		<div className='kunicki-container'>
+		<div className='name-container'>
 			<div className='kunicki1 generation'>{generation1items}</div>
 			<div className='kunicki2 generation'>{generation2items}</div>
 			<div className='kunicki3 generation'>{generation3items}</div>

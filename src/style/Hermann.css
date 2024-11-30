@@ -6,30 +6,13 @@ div .hermann-container {
 	align-content: flex-start;
 }
 
-.hermann1 {
-	display: flex;
-	height: fit-content;
-	/* width: 500px; */
-	justify-content: center;
-}
-
-.hermann2 {
-	display: flex;
-	height: fit-content;
-}
-.hermann3 {
-	display: flex;
-	/* height: 110px; */
-	justify-content: center;
-}
-.hermann4 {
-	display: flex;
-	justify-content: center;
-}
+.hermann1,
+.hermann2,
+.hermann3,
+.hermann4,
 .hermann5 {
 	display: flex;
-	/* height: 110px; */
-	justify-content: flex-end;
-	/* width: 600px; */
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	height: fit-content;
 }
-

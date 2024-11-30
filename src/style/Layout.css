@@ -5,10 +5,11 @@
 } */
  div.nav-menu {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content:flex-end;
 	align-items: center;
 	height: 40px;
-	line-height: 15px;
+	/* line-height: 15px; */
 
 	padding: 13px;
 } 

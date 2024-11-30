@@ -1,42 +1,18 @@
-div .kunicki-container {
+/* div .kunicki-container {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	margin: 90px;
 	align-content: flex-start;
-}
+} */
 
-.kunicki1 {
-	display: flex;
-	flex-wrap: wrap;
-	height: fit-content;
-	/* width: 500px; */
-	justify-content: center;
-}
-
-.kunicki2 {
-	display: flex;
-	flex-wrap: wrap;
-
-	height: fit-content;
-}
-.kunicki3 {
-	display: flex;
-	flex-wrap: wrap;
-
-	/* height: 110px; */
-}
-.kunicki4 {
-	display: flex;
-	flex-wrap: wrap;
-
-}
+.kunicki1,
+.kunicki2,
+.kunicki3,
+.kunicki4,
 .kunicki5 {
 	display: flex;
-	/* height: 110px; */
 	justify-content: flex-start;
 	flex-wrap: wrap;
-
-	/* width: 600px; */
+	height: fit-content;
 }
-

@@ -5,34 +5,14 @@ div .spaloniak-container {
 	margin: 90px;
 	align-content: flex-start;
 }
-.spaloniak0 {
-	display: flex;
-	height: fit-content;
-	/* width: 500px; */
-	justify-content: center;
-}
-.spaloniak1 {
-	display: flex;
-	height: fit-content;
-	/* width: 500px; */
-	justify-content: center;
-}
-
-.spaloniak2 {
-	display: flex;
-	height: fit-content;
-}
-.spaloniak3 {
-	display: flex;
-	/* height: 110px; */
-}
-.spaloniak4 {
-	display: flex;
-}
+.spaloniak0,
+.spaloniak1,
+.spaloniak2,
+.spaloniak3,
+.spaloniak4,
 .spaloniak5 {
 	display: flex;
-	/* height: 110px; */
-	justify-content: flex-end;
-	width: 600px;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	height: fit-content;
 }
-

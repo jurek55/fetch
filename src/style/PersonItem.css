@@ -21,45 +21,81 @@ p.name {
 	text-transform: uppercase;
 	font-weight: 600;
 }
-div.michał-kunicki-right,
-div.jerzy-kunicki-right {
+div.michał-kunicki-right {
 	display: flex;
 	flex-wrap: wrap;
 	width: 50px;
 }
-div.renata-kunicka-left {
-	width: 40px;
+div.michał-kunicki-left {
 	display: flex;
-
+	flex-wrap: wrap;
+	width: 250px;
 }
 div.witold-kunicki-left {
-	width: 270px;
+	width: 510px;
 	display: flex;
-
 }
-div.władysław-kunicki-left{
+div.władysław-kunicki-left {
 	width: 50px;
 	display: flex;
-
 }
 div.martyn-frąckowiak-left {
-	width:900px;
+	width: 900px;
 	display: flex;
-
 }
 div.filip-felicki-right {
 	width: 50px;
 	display: flex;
-
 }
 div.janina-felicka-left {
 	width: 100px;
 	display: flex;
-
 }
 div.franciszek-felicki-left {
 	width: 200px;
 	display: flex;
-
+}
+div.antoni-frąckowiak-left {
+	width: 150px;
+	display: flex;
+}
+div.lidia-kocur-right {
+	width: 100px;
+	display: flex;
 }
 
+div.magda-hermann-left {
+	width: 100px;
+	display: flex;
+}
+div.antoni-kunicki-left {
+	width: 300px;
+	display: flex;
+}
+div.magda-felicka-left {
+	width: 100px;
+	display: flex;
+}
+div.antoni-spaloniak-left {
+	width: 150px;
+	display: flex;
+}
+div.jerzy-kunicki-left {
+	width: 40px;
+	display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+	div.michał-kunicki-right,
+	div.jerzy-kunicki-right,
+	div.renata-kunicka-left,
+	div.witold-kunicki-left,
+	div.władysław-kunicki-left,
+	div.antoni-kunicki-left,
+	div.martyn-frąckowiak-left,
+	div.filip-felicki-right,
+	div.janina-felicka-left,
+	div.franciszek-felicki-left {
+		display: none;
+	}
+}

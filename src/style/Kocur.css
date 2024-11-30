@@ -6,28 +6,13 @@ div .kocur-container {
 	align-content: flex-start;
 }
 
-.kocur1 {
-	display: flex;
-	height: fit-content;
-	/* width: 500px; */
-	justify-content: center;
-}
-
-.kocur2 {
-	display: flex;
-	height: fit-content;
-}
-.kocur3 {
-	display: flex;
-	/* height: 110px; */
-}
-.kocur4 {
-	display: flex;
-}
+.kocur1,
+.kocur2,
+.kocur3,
+.kocur4,
 .kocur5 {
 	display: flex;
-	/* height: 110px; */
-	justify-content: flex-end;
-	width: 600px;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	height: fit-content;
 }
-

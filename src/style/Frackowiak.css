@@ -6,28 +6,13 @@ div .frackowiak-container {
 	align-content: flex-start;
 }
 
-.frackowiak1 {
-	display: flex;
-	height: fit-content;
-	width: 900px;
-	justify-content: center;
-}
-
-.frackowiak2 {
-	display: flex;
-	height: fit-content;
-}
-.frackowiak3 {
-	display: flex;
-	/* height: 110px; */
-}
-.frackowiak4 {
-	display: flex;
-}
+.frackowiak1,
+.frackowiak2,
+.frackowiak3,
+.frackowiak4,
 .frackowiak5 {
 	display: flex;
-	/* height: 110px; */
-	justify-content: flex-end;
-	/* width: 600px; */
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	height: fit-content;
 }
-

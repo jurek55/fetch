@@ -66,7 +66,7 @@ const Kocur = ({ data }) => {
 	));
 
 	return (
-		<div className='kocur-container'>
+		<div className='name-container'>
 			<div className='kocur1 generation'>{generation1items}</div>
 			<div className='kocur2 generation'>{generation2items}</div>
 			<div className='kocur3 generation'>{generation3items}</div>

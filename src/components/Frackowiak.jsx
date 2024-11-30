@@ -65,7 +65,7 @@ const Frackowiak = ({ data }) => {
 	));
 
 	return (
-		<div className='frackowiak-container'>
+		<div className='name-container'>
 			<div className='frackowiak1 generation'>{generation1items}</div>
 			<div className='frackowiak2 generation'>{generation2items}</div>
 			<div className='frackowiak3 generation'>{generation3items}</div>

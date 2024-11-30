@@ -44,7 +44,7 @@ const Hermann = ({ data }) => {
 	));
 	
 	return (
-		<div className='hermann-container'>
+		<div className='name-container'>
 			<div className='hermann1 generation'>{generation1items}</div>
 			<div className='hermann2 generation'>{generation2items}</div>
 			<div className='hermann3 generation'>{generation3items}</div>

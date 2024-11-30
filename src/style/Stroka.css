@@ -6,30 +6,13 @@ div .stroka-container {
 	align-content: flex-start;
 }
 
-.stroka1 {
-	display: flex;
-	height: fit-content;
-	/* width: 500px; */
-	justify-content: center;
-}
-
-.stroka2 {
-	display: flex;
-	height: fit-content;
-}
-.stroka3 {
-	display: flex;
-	/* height: 110px; */
-	justify-content: center;
-}
-.stroka4 {
-	display: flex;
-	justify-content: center;
-}
+.stroka1,
+.stroka2,
+.stroka3,
+.stroka4,
 .stroka5 {
 	display: flex;
-	/* height: 110px; */
-	justify-content: flex-end;
-	width: 600px;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	height: fit-content;
 }
-

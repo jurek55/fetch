@@ -69,7 +69,7 @@ const Stroka = ({ data }) => {
 	));
 
 	return (
-		<div className='stroka-container'>
+		<div className='name-container'>
 			<div className='stroka1 generation'>{generation1items}</div>
 			<div className='stroka2 generation'>{generation2items}</div>
 			<div className='stroka3 generation'>{generation3items}</div>

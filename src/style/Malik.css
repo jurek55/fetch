@@ -6,30 +6,13 @@ div .malik-container {
 	align-content: flex-start;
 }
 
-.malik1 {
-	display: flex;
-	height: fit-content;
-	/* width: 500px; */
-	justify-content: center;
-}
-
-.malik2 {
-	display: flex;
-	height: fit-content;
-}
-.malik3 {
-	display: flex;
-	/* height: 110px; */
-	justify-content: center;
-}
-.malik4 {
-	display: flex;
-	justify-content: center;
-}
+.malik1,
+.malik2,
+.malik3,
+.malik4,
 .malik5 {
 	display: flex;
-	/* height: 110px; */
-	justify-content: flex-end;
-	width: 600px;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	height: fit-content;
 }
-

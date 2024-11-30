@@ -69,7 +69,7 @@ const Knapik = ({ data }) => {
 	));
 
 	return (
-		<div className='knapik-container'>
+		<div className='name-container'>
 			<div className='knapik1 generation'>{generation1items}</div>
 			<div className='knapik2 generation'>{generation2items}</div>
 			<div className='knapik3 generation'>{generation3items}</div>

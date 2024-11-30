@@ -80,7 +80,7 @@ const Spaloniak = ({ data }) => {
 	));
 
 	return (
-		<div className='kunicki-container'>
+		<div className='name-container'>
 			<div className='spaloniak0 generation'>{generation0items}</div>
 			<div className='spaloniak1 generation'>{generation1items}</div>
 			<div className='spaloniak2 generation'>{generation2items}</div>

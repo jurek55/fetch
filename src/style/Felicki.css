@@ -6,28 +6,13 @@ div .felicki-container {
 	align-content: flex-start;
 }
 
-.felicki1 {
-	display: flex;
-	height: fit-content;
-	/* width: 500px; */
-	justify-content: center;
-}
-
-.felicki2 {
-	display: flex;
-	height: fit-content;
-}
-.felicki3 {
-	display: flex;
-	/* height: 110px; */
-}
-.felicki4 {
-	display: flex;
-}
+.felicki1,
+.felicki2,
+.felicki3,
+.felicki4,
 .felicki5 {
 	display: flex;
-	/* height: 110px; */
-	justify-content: flex-end;
-	/* width: 600px; */
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	height: fit-content;
 }
-
