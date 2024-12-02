@@ -9,7 +9,7 @@ const FranciszekKunicki = () => {
 			udział w operacji berlińskiej, gdzie pułk toczył ciężkie walki pod
 			Budziszynem. Podczas forsowania Nysy Łużyckiej został ranny. Trafił do
 			szpitala i po zakończeniu leczenia wrócił do jednostki. Za udział w
-			walkach został odznaczony dwukrotnie Krzyżem Zasłużonym na Polu Chwały. Po zakończeniu
+			walkach został odznaczony dwukrotnie Krzyżem \0022Zasłużonym na Polu Chwały\0022. Po zakończeniu
 			wojny Tata pozostał w zawodowej służbie wojskowej. Część jednostek II
 			Armii LWP została przekształcona w Wojska Ochrony Pogranicza, w których do
 			emerytury służył. Odszedł na emeryturę w stopniu pułkownika.

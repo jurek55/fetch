@@ -48,11 +48,11 @@ div.filip-felicki-right {
 	display: flex;
 }
 div.janina-felicka-left {
-	width: 100px;
+	width: 150px;
 	display: flex;
 }
 div.franciszek-felicki-left {
-	width: 200px;
+	width: 250px;
 	display: flex;
 }
 div.antoni-frąckowiak-left {
@@ -72,10 +72,10 @@ div.antoni-kunicki-left {
 	width: 300px;
 	display: flex;
 }
-div.magda-felicka-left {
+/* div.magda-felicka-left {
 	width: 100px;
 	display: flex;
-}
+} */
 div.antoni-spaloniak-left {
 	width: 150px;
 	display: flex;
@@ -84,8 +84,12 @@ div.jerzy-kunicki-left {
 	width: 40px;
 	display: flex;
 }
+div.barbara-felicka-left {
+	width: 40px;
+	display: flex;
+}
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
 	div.michał-kunicki-right,
 	div.jerzy-kunicki-right,
 	div.renata-kunicka-left,
@@ -98,4 +102,4 @@ div.jerzy-kunicki-left {
 	div.franciszek-felicki-left {
 		display: none;
 	}
-}
+} */

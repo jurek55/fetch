@@ -14,7 +14,8 @@
 	padding: 13px;
 } 
 .active {
-	color: red;
+	color: #747bff;
+	text-decoration: underline;
 }
 a:hover {
 	color: red;

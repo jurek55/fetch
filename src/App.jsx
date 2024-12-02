@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
-import Layout from "./components/Layout";
+import MainMenu from "./components/MainMenu";
 import "./App.css";
+
 import Rout from "./components/Rout";
 
 function App() {
@@ -35,7 +36,7 @@ function App() {
 			<BrowserRouter>
 				<div className='container'>
 					<div className='nav'>
-						<Layout />
+						<MainMenu />
 					</div>
 					<div className='content'>
 						<Rout data={data} images={images} />
