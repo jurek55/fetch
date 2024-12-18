@@ -2,7 +2,7 @@ import {  NavLink } from "react-router-dom";
 import {Outlet} from 'react-router';
 import "../style/Layout.css";
 
-const Layout = () => {
+const MainMenu = () => {
 	const links = [
 		{ id: 1, path: "/", name: "Home" },
 		{ id: 2, path: "/blogs", name: "Blogs" },
@@ -23,4 +23,4 @@ const Layout = () => {
 	return <>{items}</>;
 };
 
-export default Layout;
+export default MainMenu

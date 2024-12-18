@@ -1,11 +1,12 @@
+import AlbumsMenu from "./AlbumsMenu";
+
 const Albums = () => {
 	return (
-		<>
-			<div>
-				<h1>Albumy</h1>
+		<div className='container'>
+			<div className='nav'>
+				<AlbumsMenu />
 			</div>
-			<div>Albums</div>
-		</>
+		</div>
 	);
 };
 export default Albums;
