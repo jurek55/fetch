@@ -1,6 +1,6 @@
 import {  NavLink } from "react-router-dom";
 import {Outlet} from 'react-router';
-import "../style/Layout.css";
+// import "../style/Layout.css";
 // {`Item  ${item}`}
 const Layout = () => {
 	const links = [

@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import Dropdown from "./components/Dropdown/Dropdown";
 import DropdownItem from "./components/DropdownItem/DropdownItem";
 import "./App.css";
-import {  NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 // import {Outlet} from 'react-router';
 
 import Rout from "./components/Rout";
@@ -59,19 +59,25 @@ function App() {
 	if (data.length && images.length) {
 		return (
 			<BrowserRouter>
-				<div className='container'>
-					{/* <div className='nav'> */}
+			<div className='dropdown'>
 						<Dropdown
 							buttonText='MENU'
 							content={
 								<>
 									{links.map(item => (
-										<DropdownItem key={item.id}><NavLink to={item.path}>{item.name}</NavLink></DropdownItem>
+										<DropdownItem key={item.id}>
+											<NavLink to={item.path}>{item.name}</NavLink>
+										</DropdownItem>
 									))}
 								</>
 							}
 						/>
+					</div>
+				<div className='container'>
+					{/* <div className='nav'> */}
+					
 					{/* </div> */}
+
 					<div className='content'>
 						<Rout data={data} images={images} />
 					</div>
