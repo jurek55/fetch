@@ -12,6 +12,10 @@ import Rout from "./components/Rout";
 function App() {
 	const [data, setData] = useState([]);
 	const [images, setImages] = useState([]);
+	const [open, setOpen] = useState(false);
+	const toggleDropdown = () => {
+		setOpen(open => !open);
+	};
 	const myurl_data = "http://localhost/home/dane.php";
 	const myurl_images = "http://localhost/home/images.php";
 
@@ -35,7 +39,6 @@ function App() {
 
 	console.log(data);
 	console.log(images);
-	// const items = [1, 2, 3, 4, 5, 6, 7, 8];
 	const links = [
 		{ id: 1, path: "/", name: "Home" },
 		{ id: 2, path: "/blogs", name: "Blogs" },
@@ -56,28 +59,31 @@ function App() {
 		{ id: 17, path: "/promnice", name: "Album Promnice" },
 		{ id: 18, path: "/admin", name: "Admin panel" },
 	];
+
 	if (data.length && images.length) {
 		return (
 			<BrowserRouter>
-			<div className='dropdown'>
-						<Dropdown
-							buttonText='MENU'
-							content={
-								<>
-									{links.map(item => (
-										<DropdownItem key={item.id}>
-											<NavLink to={item.path}>{item.name}</NavLink>
-										</DropdownItem>
-									))}
-								</>
-							}
-						/>
-					</div>
+				<div className='dropdown'>
+					<Dropdown
+						onClick={toggleDropdown}
+						open={open}
+						buttonText='MENU'
+						content={
+							<>
+								{links.map(item => (
+									<DropdownItem
+										key={item.id}
+										open={open}
+										onClick={toggleDropdown}
+									>
+										<NavLink to={item.path}>{item.name}</NavLink>
+									</DropdownItem>
+								))}
+							</>
+						}
+					/>
+				</div>
 				<div className='container'>
-					{/* <div className='nav'> */}
-					
-					{/* </div> */}
-
 					<div className='content'>
 						<Rout data={data} images={images} />
 					</div>

@@ -27,3 +27,7 @@
 	opacity: 1;
 	transform: translateY(0);
 }
+.content-close {
+	opacity: 0;
+	transform: translateY(0);
+}
