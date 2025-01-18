@@ -1,10 +1,10 @@
 import AlbumsMenu from "./AlbumsMenu";
 
-const Albums = () => {
+const Albums = ({isVisible}) => {
 	return (
-		<div className='container'>
+		<div className = {`${isVisible} ? 'albums-nav-visible' : 'albums-nav-unvisble}'`}>
 			<div className='nav'>
-				<AlbumsMenu />
+				<AlbumsMenu/>
 			</div>
 		</div>
 	);

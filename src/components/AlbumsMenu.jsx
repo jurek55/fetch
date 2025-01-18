@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { Outlet } from "react-router";
-import "../style/Layout.css";
+import "../style/AlbumsMenu.css";
 
 const AlbumsMenu = () => {
 	const links = [
@@ -11,14 +11,18 @@ const AlbumsMenu = () => {
 
 	const items = links.map(item => {
 		return (
-			<div className='nav-menu ' key={item.id}>
+			<li key={item.id}>
 				<NavLink to={item.path}>{item.name}</NavLink>
 				<Outlet />
-			</div>
+			</li>
 		);
 	});
 
-	return <>{items}</>;
+	return (
+		<div className='nav-menu'>
+			<ul>{items}</ul>
+		</div>
+	);
 };
 
 export default AlbumsMenu;

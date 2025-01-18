@@ -7,7 +7,7 @@ const Layout = () => {
 		{ id: 1, path: "/", name: "Home" },
 		{ id: 2, path: "/blogs", name: "Blogs" },
 		{ id: 3, path: "/albums", name: "Albums" },
-		{ id: 4, path: "/list", name: "List" },
+		{ id: 4, path: "/list", name: "Lis" },
 		{ id: 5, path: "/blogs", name: "Blogs" },
 		{ id: 6, path: "/kunicki", name: "Kunicki" },
 		{ id: 7, path: "/kocur", name: "Kocur" },

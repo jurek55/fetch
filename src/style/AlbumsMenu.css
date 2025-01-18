@@ -1,0 +1,35 @@
+.nav-menu-visble {
+    /* display: none; */
+    position: absolute;
+    right: 400px;
+    top: 0;
+	background-color: #fff;
+	display: flex; 
+	justify-content:right;
+	align-items: center;
+	height: 200px;
+	width: 100px;
+	list-style-type: none;
+	background-color: blue;
+
+}
+
+.nav-menu-unvisble {
+    display: none;
+    position: absolute;
+    right: 400px;
+    top: 0;
+	background-color: #fff;
+	/* display: flex;  */
+	justify-content:right;
+	align-items: center;
+	height: 200px;
+	width: 100px;
+	list-style-type: none;
+	background-color: blue;
+
+}
+div.nav-menu>ul {
+    display: flex;
+    flex-direction: column;
+}

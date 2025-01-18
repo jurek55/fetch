@@ -1,0 +1,26 @@
+div.navbar {
+	display: flex;
+	width: 100%;
+	background-color: blue;
+	position: fixed;
+	z-index: 10;
+	height: 60px;
+	justify-content: right;
+	align-items: center;
+	flex-direction: row-reverse;
+}
+
+ul {
+	display: flex;
+}
+
+ul > li {
+	padding: 20px;
+	text-decoration: none;
+	list-style-type: none;
+	color: white;
+}
+
+a {
+	color: yellow;
+}
