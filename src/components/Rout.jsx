@@ -17,7 +17,7 @@ import AlbumMarszewo from "./AlbumMarszewo.jsx";
 import AlbumPromnice from "./AlbumPromnice.jsx";
 import AlbumPowiazyn from "./AlbumPowiazyn.jsx";
 import Administration from "./Administration.jsx";
-import Albums from "./AlbumsMenu.jsx";
+import AlbumsMenu from "./AlbumsMenu.jsx";
 
 // import SinglePhoto from './SinglePhoto.jsx'
 import NoPage from "./NoPage.jsx";
@@ -46,7 +46,7 @@ const Rout = ({ data, images }) => {
 			<Route path='/promnice' element={<AlbumPromnice images = {images}/>} />
 			<Route path='/powiazyn' element={<AlbumPowiazyn images = {images}/>} />
 			<Route path='/panel' element={<Administration />} />
-			<Route path='/albums' element={<Albums />} />
+			<Route path='/albums' element={<AlbumsMenu />} />
 
 			<Route path='*' element={<NoPage />} />
 		</Routes>
