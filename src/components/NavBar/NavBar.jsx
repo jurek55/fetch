@@ -22,19 +22,21 @@ const NavBar = () => {
 	};
 	const items = links.map(item => {
 		return (
-			<li key={item.id} onClick={handleClick}>
-				<NavLink to={item.path} name={item.id}>
-					{item.name}
-				</NavLink>
-				<Outlet />
-			</li>
+			<>
+				<li key={item.id} onClick={handleClick}>
+					<NavLink to={item.path} name={item.id}>
+						{item.name}
+					</NavLink>
+					<Outlet />
+				</li>
+			</>
 		);
 	});
 
 	return (
 		<>
-			<AlbumsMenu isvisible={isvisible} />
 			<ul>{items}</ul>
+			<AlbumsMenu isvisible={isvisible} />
 		</>
 	);
 };
