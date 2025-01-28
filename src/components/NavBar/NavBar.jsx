@@ -13,7 +13,8 @@ const NavBar = () => {
 	];
 	const [isvisible, setIsvisible] = useState(false);
 	const handleClick = event => {
-		event.preventDefault();
+		// event.preventDefault();
+		console.log("dupa");
 		console.log(event.target.name);
 		console.log(isvisible);
 		if (event.target.name === "3") {
@@ -22,21 +23,19 @@ const NavBar = () => {
 	};
 	const items = links.map(item => {
 		return (
-			<>
-				<li key={item.id} onClick={handleClick}>
-					<NavLink to={item.path} name={item.id}>
-						{item.name}
-					</NavLink>
-					<Outlet />
-				</li>
-			</>
+			<li key={item.id} onClick={handleClick}>
+				<NavLink to={item.path} name={item.id}>
+					{item.name}
+				</NavLink>
+				<Outlet />
+			</li>
 		);
 	});
 
 	return (
 		<>
 			<ul>{items}</ul>
-			<AlbumsMenu isvisible={isvisible} />
+			<AlbumsMenu isvisible={isvisible} handleClick={handleClick} />
 		</>
 	);
 };
