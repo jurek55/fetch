@@ -1,12 +1,12 @@
 .nav-menu-visible {
     position: absolute;
-    right: 10em;
+    right: 12em;
     top: 60px;
 	display: flex; 
 	flex-direction: column;
 	align-items: center;
 	height: 150px;
-	width: 150px;
+	width: 100px;
 	list-style-type: none;
 	background-color: blue;
 	

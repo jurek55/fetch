@@ -2,7 +2,7 @@ import "./NavBar.css";
 import { NavLink } from "react-router-dom";
 import { Outlet } from "react-router";
 import { useState } from "react";
-import AlbumsMenu from "../AlbumsMenu";
+import AlbumsMenu from "../AlbumsMenu/AlbumsMenu";
 const NavBar = () => {
 	const links = [
 		{ id: 1, path: "/", name: "Home" },
@@ -11,16 +11,15 @@ const NavBar = () => {
 		{ id: 4, path: "/list", name: "List" },
 		{ id: 18, path: "/admin", name: "Admin panel" },
 	];
-	const [isvisible, setIsvisible] = useState(false);
+	const [isvisible3, setIsvisible3] = useState(false);
 	const handleClick = event => {
-		// event.preventDefault();
-		console.log("dupa");
 		console.log(event.target.name);
-		console.log(isvisible);
+		console.log(isvisible3);
 		if (event.target.name === "3") {
-			setIsvisible(!isvisible);
+			setIsvisible3(!isvisible3);
 		}
 	};
+
 	const items = links.map(item => {
 		return (
 			<li key={item.id} onClick={handleClick}>
@@ -35,7 +34,7 @@ const NavBar = () => {
 	return (
 		<>
 			<ul>{items}</ul>
-			<AlbumsMenu isvisible={isvisible} handleClick={handleClick} />
+			{isvisible3 && <AlbumsMenu isvisible={isvisible3} changeIsVisible={handleClick} />}
 		</>
 	);
 };
