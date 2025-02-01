@@ -22,12 +22,12 @@ const AlbumsMenu = ({ isvisible, changeIsVisible }) => {
 
 	if (isvisible) {
 		return (
-			<div className='nav-menu-visible' onClick={changeIsVisible}>
+			<div className='nav-menu-visible-albums' onClick={changeIsVisible}>
 				{items}
 			</div>
 		);
 	} else {
-		return <div className='nav-menu-unvisible'>{items}</div>;
+		return <div className='nav-menu-unvisible-albums'>{items}</div>;
 	}
 };
 
