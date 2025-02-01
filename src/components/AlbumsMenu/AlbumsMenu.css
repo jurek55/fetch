@@ -1,0 +1,37 @@
+.nav-menu-visible-albums {
+    position: absolute;
+    right: 13em;
+    top: 60px;
+	display: flex; 
+	flex-direction: column;
+	align-items: center;
+	height: 150px;
+	width: 100px;
+	list-style-type: none;
+	background-color: blue;
+	
+	text-align: center;
+}
+.nav-menu-unvisible-albums {
+    position: absolute;
+    right: 400px;
+    top: 0;
+	display: none; 
+	flex-direction: column;
+	align-items: center;
+	height: 150px;
+	width: 150px;
+	list-style-type: none;
+	background-color: blue;
+	
+	text-align: center;
+}
+.nav-menu-visible-albums>p {
+	text-align: left;
+	font-size: 1rem;
+	padding: 10px;
+	width: 100px;
+	margin-left: 30px;
+}
+
+

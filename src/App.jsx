@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
-import Menu from "./components/Menu/Menu";
+import NavBar from "./components/NavBar/NavBar";
 import "./App.css";
+// import Icon from './components/icons/icon'
 
 import Rout from "./components/Rout";
 
@@ -32,14 +33,19 @@ function App() {
 
 	if (data.length && images.length) {
 		return (
-			<BrowserRouter>
-				<Menu />
-				<div className='container'>
-					<div className='content'>
+			<>
+				<BrowserRouter>
+					<div className='navbar'>
+						<NavBar />
+						
+					</div>
+					<div className='container'>
+						{/* <div className='content'> */}
 						<Rout data={data} images={images} />
 					</div>
-				</div>
-			</BrowserRouter>
+					{/* </div> */}
+				</BrowserRouter>
+			</>
 		);
 	} else return <div>waiting for data ...</div>;
 }

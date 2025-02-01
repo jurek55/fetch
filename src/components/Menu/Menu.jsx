@@ -34,7 +34,7 @@ function Menu() {
 			<Dropdown
 				onClick={toggleDropdown}
 				open={open}
-				buttonText='MENU'
+				buttonText='Menu'
 				content={
 					<>
 						{links.map(item => (
